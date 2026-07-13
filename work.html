@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Work | Onoyima Francis</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:wght@300;400;500&family=Epilogue:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <a href="index.html" class="nav__logo">
+      <span class="nav__logo-bracket">[</span>OF<span class="nav__logo-bracket">]</span>
+    </a>
+    <ul class="nav__links" id="navLinks">
+      <li><a href="index.html" class="nav__link">Home</a></li>
+      <li><a href="work.html" class="nav__link active">Work</a></li>
+      <li><a href="about.html" class="nav__link">About</a></li>
+      <li><a href="contact.html" class="nav__link nav__link--cta">Let's Talk</a></li>
+    </ul>
+    <div class="nav__right">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle light/dark mode">
+        <span class="theme-toggle__track"><span class="theme-toggle__thumb"><svg class="icon-sun" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg><svg class="icon-moon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg></span></span>
+      </button>
+      <button class="nav__hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+ <div class="mobile-menu" id="mobileMenu">
+  <ul>
+    <li style="--i:0"><a href="index.html" onclick="closeMobileMenu()"><span class="mm-num">01</span>Home</a></li>
+    <li style="--i:1"><a href="work.html" onclick="closeMobileMenu()"><span class="mm-num">02</span>Work</a></li>
+    <li style="--i:2"><a href="about.html" onclick="closeMobileMenu()"><span class="mm-num">03</span>About</a></li>
+    <li style="--i:3"><a href="contact.html" onclick="closeMobileMenu()"><span class="mm-num">04</span>Let's Talk</a></li>
+  </ul>
+</div>
+
+  <main>
+
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+    <div class="container">
+        <div class="page-hero__content">
+
+            <div class="page-hero__left">
+                <div class="section-label">
+                    <span class="section-label__line"></span>
+                    <span class="section-label__text">Selected Work</span>
+                </div>
+
+                <h1 class="page-hero__heading">
+                    Systems built.<br>
+                    <span class="muted-text">Problems solved.</span>
+                </h1>
+
+                <p class="page-hero__sub">
+                    A record of platforms, tools and integrations built across aviation, fintech, healthcare, Web3 and e-commerce.
+                </p>
+            </div>
+
+            <div class="page-hero__right">
+                <img src="assets/images/dashboard_imag.png" alt="Dashboard">
+            </div>
+
+        </div>
+    </div>
+</section>
+
+    <!-- WORK ITEMS -->
+    <section class="work-full section">
+      <div class="container">
+
+        <!-- AVIATION -->
+        <div class="work-item" id="aviation">
+          <div class="work-item__header">
+            <div>
+              <span class="work-item__domain">Aviation and Safety</span>
+              <h2 class="work-item__title">SERA Aviation Safety Platform</h2>
+              <span class="work-item__period">Dec 2024 – Sep 2025 &nbsp;·&nbsp; Remote · United States</span>
+            </div>
+          
+           
+            <div class="work-item__tags">
+              <span>PHP</span><span>MySQL</span><span>Azure AD</span><span>AWS Cognito</span><span>KoboToolbox API</span><span>JavaScript</span>
+            </div>
+          </div>
+          <p class="work-item__summary">
+            SERA is a web platform used by airlines to submit aviation incident reports wildlife strikes, operational risks, disasters and safety issues across the United States.
+          </p>
+
+          <!-- MEDIA TOGGLE -->
+          <div class="media-viewer" data-viewer>
+            <div class="media-viewer__toggle">
+              <button class="media-viewer__pill active" data-tab="screenshots">Platform</button>
+              <button class="media-viewer__pill" data-tab="api">Mobile API</button>
+              <button class="media-viewer__pill" data-tab="schemas">Form Schemas</button>
+            </div>
+            <div class="media-viewer__frame">
+              <div class="media-viewer__panel active" data-panel="screenshots">
+                <img src="assets/images/SERA.jpeg" alt="SERA Aviation Safety Platform" />
+              </div>
+              <div class="media-viewer__panel" data-panel="api">
+                <img src="assets/images/SERA1.jpeg" alt="SERA Mobile API" />
+                <p class="work-item__media-caption">A custom API built for the SERA mobile app that stores form data into the database of a specific flight group and sends an automated email to that group's supervisor. Authenticates via JWT before any form data is accepted.</p>
+              </div>
+              <div class="media-viewer__panel" data-panel="schemas">
+                <img src="assets/images/SERA2.jpeg" alt="SERA Form Schemas" />
+                <p class="work-item__media-caption">Form schemas returned by the API: structured, declarative definitions describing the layout, fields, validation rules and behavior of each digital form type used across airline groups.</p>
+              </div>
+            </div>
+          </div>
+
+          <ul class="work-item__bullets">
+            <li>Implemented SP-Initiated SSO using Azure AD and AWS Cognito, enhancing authentication and authorization for CAI and CXI airline groups with secure session routing and multi-group access control.</li>
+            <li>Developed RESTful KoboToolbox API integration to replace FormPA: storing submitted reports in the correct group database, downloading attachments and sending automated admin notifications.</li>
+            <li>Built dynamic dashboards with JSON-based form schemas and group-specific buttons that update based on each airline's database, using JavaScript for interactive data rendering.</li>
+            <li>Added automated email workflows, incident ingestion logic, data validation and multi-database operations in PHP and MySQL.</li>
+            <li>Improved performance, data accuracy and reporting automation across all airline groups.</li>
+          </ul>
+        </div>
+
+        <div class="work-divider"></div>
+
+        <!-- COINBASE VAULT -->
+        <div class="work-item" id="kyc">
+          <div class="work-item__header">
+            <div>
+              <span class="work-item__domain">Crypto and Security</span>
+              <h2 class="work-item__title">Encryption Vault — Authentication & KYC Platform(Coinbase-Inspired)</h2>
+              <span class="work-item__period">Aug 2025 – Oct 2025 &nbsp;·&nbsp; Remote · United States</span>
+            </div>
+            <div class="work-item__tags">
+              <span>PHP</span><span>MySQL</span><span>Twilio</span><span>Argon2ID</span><span>Render</span>
+            </div>
+          </div>
+          <p class="work-item__summary">
+            A complete authentication and KYC verification system for a crypto-security platform that lets users borrow digital assets with no collateral, requiring robust identity checks.
+          </p>
+
+          <!-- MEDIA TOGGLE -->
+          <div class="media-viewer" data-viewer>
+            <div class="media-viewer__toggle">
+              <button class="media-viewer__pill active" data-tab="screenshots">Screenshots</button>
+              <button class="media-viewer__pill" data-tab="video">Video</button>
+            </div>
+            <div class="media-viewer__frame">
+              <div class="media-viewer__panel active" data-panel="screenshots">
+                <img src="assets/images/CSV1.jpeg" alt="Crypto Safe Vault hero" />
+                <img src="assets/images/CSV2.jpeg" alt="Crypto Safe Vault stats" />
+                <img src="assets/images/dashboard_imag.png" alt="Crypto Safe Vault dashboard" />
+              </div>
+              <div class="media-viewer__panel" data-panel="video">
+                <div class="media-viewer__video-group">
+                  <div class="media-viewer__video-item">
+                    <video autoplay muted loop playsinline>
+                      <source src="assets/videos/CSV.mov" type="video/mp4" />
+                    </video>
+                    <span class="media-viewer__live"><span class="media-viewer__dot"></span> Live preview</span>
+                  </div>
+                  <div class="media-viewer__video-item">
+                    <video autoplay muted loop playsinline>
+                      <source src="assets/videos/CSV1.mov" type="video/mp4" />
+                    </video>
+                    <span class="media-viewer__live"><span class="media-viewer__dot"></span> Auth flow</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <ul class="work-item__bullets">
+            <li>Implemented secure signup and login with Argon2ID hashing, session regeneration and anti-double-submit protection.</li>
+            <li>Integrated Twilio for email and SMS OTP verification including expired-code handling, resend limits and phone re-verification flows.</li>
+            <li>Designed a full KYC submission workflow with status tracking (Submitted, Approved, Rejected) and responsive UI.</li>
+            <li>Developed an admin dashboard for managing KYC queues, user lists and verification tools.</li>
+            <li>Updated MySQL schema to support OTP codes, expiries, verify states and KYC records.</li>
+            <li>Prepared the system for deployment on Render with Composer setup, .env configs, DB refactoring and SDK configuration.</li>
+          </ul>
+        </div>
+
+        <div class="work-divider"></div>
+
+        <!-- NIGHTBRIGHT -->
+        <div class="work-item" id="nightbright">
+          <div class="work-item__header">
+            <div>
+              <span class="work-item__domain">Nonprofit and Charity</span>
+              <h2 class="work-item__title">NightBright Donor Platform</h2>
+              <span class="work-item__period">Jun 2025 – Aug 2025 &nbsp;·&nbsp; Remote · United States</span>
+            </div>
+            <div class="work-item__tags">
+              <span>Laravel</span><span>PHP</span><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Stripe</span>
+            </div>
+          </div>
+          <p class="work-item__summary">
+            NightBright is a Laravel platform enabling donors and investors to support evangelist-led causes including feeding programs, church rebuilding and charity missions.
+          </p>
+
+          <!-- MEDIA TOGGLE -->
+          <div class="media-viewer" data-viewer>
+            <div class="media-viewer__toggle">
+              <button class="media-viewer__pill active" data-tab="screenshots">Screenshots</button>
+              <button class="media-viewer__pill" data-tab="video">Video</button>
+            </div>
+            <div class="media-viewer__frame">
+              <div class="media-viewer__panel active" data-panel="screenshots">
+                <img src="assets/images/NB.jpeg" alt="NightBright donor platform" />
+              </div>
+              <div class="media-viewer__panel" data-panel="video">
+                <video autoplay muted loop playsinline>
+                  <source src="assets/videos/NB.mov" type="video/mp4" />
+                </video>
+                <span class="media-viewer__live"><span class="media-viewer__dot"></span> Live preview</span>
+              </div>
+            </div>
+          </div>
+
+          <ul class="work-item__bullets">
+            <li>Worked across a two-server architecture required to run the platform's donation and dashboard systems.</li>
+            <li>Fixed UI and UX issues and implemented responsive design using HTML5 and CSS3 for both Evangelist and Donor dashboards.</li>
+            <li>Repaired the profile picture upload system ensuring images save correctly across environments.</li>
+            <li>Fixed and tested Stripe payment API integration using their test environment, ensuring reliable transaction workflows and proper error handling.</li>
+            <li>Improved authentication by separating donor and evangelist signups and logins, and adding proper validation with error feedback.</li>
+            <li>Corrected redirect logic for both dashboards to ensure users always land in the correct portal.</li>
+            <li>Polished frontend layouts and optimized all pages for both mobile and large screens, enhancing performance and interactivity through JavaScript improvements.</li>
+          </ul>
+        </div>
+
+        <div class="work-divider"></div>
+
+
+        <!-- SWIFTBITE -->
+        <div class="work-item" id="swiftbite">
+          <div class="work-item__header">
+            <div>
+              <span class="work-item__domain">Food and Delivery</span>
+              <h2 class="work-item__title">SwiftBite — Food Delivery Platform</h2>
+              <span class="work-item__period">Founder & Full-Stack Developer</span>
+            </div>
+            <div class="work-item__tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+          </div>
+          <p class="work-item__summary">
+            SwiftBite is a startup platform connecting customers with local restaurants, home chefs, bakeries, drinks and smoothie vendors. Built to help customers discover food they love while giving local food businesses the reach they deserve to grow.
+          </p>
+
+          <div class="media-viewer" data-viewer>
+            <div class="media-viewer__toggle">
+              <button class="media-viewer__pill active" data-tab="launch">Launch Page</button>
+              <button class="media-viewer__pill" data-tab="waitlist">Pre-launch Waitlist</button>
+              <button class="media-viewer__pill" data-tab="partners">Restaurant Partners</button>
+            </div>
+            <div class="media-viewer__frame">
+
+              <!-- LAUNCH PAGE -->
+              <div class="media-viewer__panel active" data-panel="launch">
+                <img src="assets/images/SB1.jpeg" alt="SwiftBite launch page hero" />
+                <img src="assets/images/SB2.jpeg" alt="SwiftBite launch page countdown" />
+                <video autoplay muted loop playsinline>
+                  <source src="assets/videos/SBV1.mp4" type="video/mp4" />
+                </video>
+                <span class="media-viewer__live"><span class="media-viewer__dot"></span> Launch page walkthrough</span>
+              </div>
+
+              <!-- PRE-LAUNCH WAITLIST -->
+              <div class="media-viewer__panel" data-panel="waitlist">
+                <img src="assets/images/SB3.jpeg" alt="SwiftBite pre-launch waitlist page" />
+                <video autoplay muted loop playsinline>
+                  <source src="assets/videos/SBV2.mp4" type="video/mp4" />
+                </video>
+                <span class="media-viewer__live"><span class="media-viewer__dot"></span> Waitlist page walkthrough</span>
+                <p class="work-item__media-caption">A separate pre-launch page where anticipating users register their email to be notified when SwiftBite goes live. Features a live countdown timer and early-access sign-up form.</p>
+              </div>
+
+              <!-- RESTAURANT PARTNERS -->
+              <div class="media-viewer__panel" data-panel="partners">
+                <video autoplay muted loop playsinline>
+                  <source src="assets/videos/SBV3.mp4" type="video/mp4" />
+                </video>
+                <span class="media-viewer__live"><span class="media-viewer__dot"></span> Restaurant partner registration</span>
+                <p class="work-item__media-caption">A dedicated page for restaurants and food sellers to register before launch — covering what SwiftBite is, why it was created and who it is built for.</p>
+              </div>
+
+            </div>
+          </div>
+
+          <ul class="work-item__bullets">
+            <li>Built a launch page connecting customers with local restaurants, home chefs, bakeries and drinks vendors across the city.</li>
+            <li>Developed a standalone pre-launch waitlist page with a live countdown timer and email sign-up form, capturing early users ahead of the platform going live.</li>
+            <li>Built a separate restaurant and food seller registration page explaining the platform's purpose, target audience and value proposition to prospective partners.</li>
+            <li>Delivered three distinct pages with a consistent brand identity: warm food photography, bold typography and a strong orange-on-dark visual language.</li>
+          </ul>
+        </div>
+
+        <div class="work-divider"></div>
+
+        <!-- SPORTS BET KINGS -->
+        <div class="work-item" id="sportsbetkings">
+          <div class="work-item__header">
+            <div>
+              <span class="work-item__domain">Sports and Betting</span>
+              <h2 class="work-item__title">Sports Bet Kings</h2>
+              <span class="work-item__period">Founder & Full-Stack Developer</span>
+            </div>
+            <div class="work-item__tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+          </div>
+          <p class="work-item__summary">
+            A dynamic sports betting platform featuring live streaming, real-time betting and a full admin dashboard for managing games, user transactions and sports content.
+          </p>
+
+          <!-- MEDIA TOGGLE -->
+          <div class="media-viewer" data-viewer>
+            <div class="media-viewer__toggle">
+              <button class="media-viewer__pill active" data-tab="screenshots">Screenshots</button>
+              <button class="media-viewer__pill" data-tab="video">Video</button>
+            </div>
+            <div class="media-viewer__frame">
+              <div class="media-viewer__panel active" data-panel="screenshots">
+                <img src="assets/images/SBK.jpeg" alt="Sports Bet Kings multi-device showcase" />
+              </div>
+              <div class="media-viewer__panel" data-panel="video">
+                <video autoplay muted loop playsinline>
+                  <source src="assets/videos/SBKV.mp4" type="video/mp4" />
+                </video>
+                <span class="media-viewer__live"><span class="media-viewer__dot"></span> Live preview</span>
+              </div>
+            </div>
+          </div>
+
+          <ul class="work-item__bullets">
+            <li>Implemented live streaming features, allowing users to watch matches and sports games directly on the platform.</li>
+            <li>Integrated real-time betting functionalities, ensuring seamless and quick updates for users placing bets.</li>
+            <li>Created an intuitive admin dashboard using PHP, enabling admins to update website content, manage transactions and registered users, open and manage betting games, address customer complaints, stream live games and post sports news.</li>
+            <li>Designed and built a fully responsive multi-page sports betting site optimized for desktop, tablet and mobile.</li>
+            <li>Collaborated with frontend and backend teams to ensure a smooth and engaging user experience.</li>
+          </ul>
+        </div>
+
+        <div class="work-divider"></div>
+
+        <!-- SMART RENTAL DEALS -->
+        <div class="work-item" id="rental">
+          <div class="work-item__header">
+            <div>
+              <span class="work-item__domain">Hospitality and Real Estate</span>
+              <h2 class="work-item__title">Smart Rental Deals</h2>
+              <span class="work-item__period">Feb 2023 – May 2023 &nbsp;·&nbsp; Remote · Canada</span>
+            </div>
+            <div class="work-item__tags">
+              <span>Node.js</span><span>Express</span><span>PHP</span><span>Payment Gateways</span><span>SEO</span>
+            </div>
+          </div>
+          <p class="work-item__summary">
+            Designed and developed a hotel and resort reservation platform increasing customer engagement by 30%.
+          </p>
+
+          <!-- MEDIA TOGGLE -->
+          <div class="media-viewer" data-viewer>
+            <div class="media-viewer__toggle">
+              <button class="media-viewer__pill active" data-tab="screenshots">Screenshots</button>
+              <button class="media-viewer__pill" data-tab="video">Video</button>
+            </div>
+            <div class="media-viewer__frame">
+              <div class="media-viewer__panel active" data-panel="screenshots">
+                <img src="assets/images/SRD1.jpeg" alt="Smart Rental Deals hero" />
+                <img src="assets/images/SRD2.jpeg" alt="Smart Rental Deals room packages" />
+              </div>
+              <div class="media-viewer__panel" data-panel="video">
+                <video autoplay muted loop playsinline>
+                  <source src="assets/videos/SRD.mov" type="video/mp4" />
+                </video>
+                <span class="media-viewer__live"><span class="media-viewer__dot"></span> Live preview</span>
+              </div>
+            </div>
+          </div>
+
+          <ul class="work-item__bullets">
+            <li>Designed and developed responsive web pages for a hotel and resort reservation website, enhancing user experience and increasing customer engagement by 30%.</li>
+            <li>Implemented a secure booking system with integrated payment gateways, ensuring smooth transactions and protecting user data.</li>
+            <li>Developed backend APIs to manage property listings, reservations and user profiles using Node.js and Express.</li>
+            <li>Collaborated with the marketing team to integrate SEO best practices, improving search engine rankings and driving organic traffic.</li>
+            <li>Led the development of an investment portal providing users with real-time data and analytics tools to track their investments.</li>
+            <li>Used PHP to design the admin dashboard, allowing admins to update website content, keep records of transactions and register users efficiently.</li>
+            <li>Ensured cross-browser compatibility and responsiveness across various devices, maintaining a consistent user experience.</li>
+            <li>Managed version control and deployment processes using Git and CI/CD pipelines, streamlining development workflows.</li>
+          </ul>
+        </div>
+
+        <div class="work-divider"></div>
+
+        
+
+        <!-- SEASONAL WEB EXPERIENCES -->
+        <div class="work-item" id="ext">
+          <div class="work-item__header">
+            <div>
+              <span class="work-item__domain">E-commerce and Seasonal</span>
+              <h2 class="work-item__title">Seasonal Web Experiences</h2>
+              <span class="work-item__period">
+                  December 2025 &nbsp;·&nbsp; Remote · Multiple International Clients
+              </span>
+            </div>
+            <div class="work-item__tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+          </div>
+          <p class="work-item__summary">
+            Standalone seasonal landing pages built for high-conversion moments, including a Christmas campaign page and a New Year 2026 gift ordering experience.
+          </p>
+
+          <!-- MEDIA TOGGLE -->
+         <div class="media-viewer__toggle-wrap" data-viewer>
+  <div class="media-viewer__toggle">
+    <button class="media-viewer__pill active" data-tab="christmas">Christmas</button>
+    <button class="media-viewer__pill" data-tab="screenshots">Christmas Gift Shop</button>
+    <button class="media-viewer__pill" data-tab="gifting">Gift Ordering</button>
+  </div>
+
+            <div class="media-viewer__frame">
+              <div class="media-viewer__panel active" data-panel="christmas">
+                <video autoplay muted loop playsinline>
+                  <source src="assets/videos/EXT1.mov" type="video/mp4" />
+                </video>
+                <span class="media-viewer__live"><span class="media-viewer__dot"></span> Christmas page</span>
+              </div>
+              <div class="media-viewer__panel" data-panel="screenshots">
+                <img src="assets/images/chris_store.png" alt="Christmas store" />
+                <img src="assets/images/chris_store1.png" alt="Christmas store" />
+              </div>
+              <div class="media-viewer__panel" data-panel="gifting">
+                <video autoplay muted loop playsinline>
+                  <source src="assets/videos/EXT3.mov" type="video/mp4" />
+                </video>
+                <span class="media-viewer__live"><span class="media-viewer__dot"></span> Gift ordering 2026</span>
+              </div>
+            </div>
+          </div>
+
+          <ul class="work-item__bullets">
+            <li>Designed festive landing pages with strong seasonal visual identity and clear conversion paths.</li>
+            <li>Built a gift ordering interface with product browsing and a New Year 2026 promotional theme.</li>
+          </ul>
+        </div>
+
+          <div class="work-divider"></div>
+
+
+        <!-- TOURIX -->
+        <div class="work-item" id="tourix">
+          <div class="work-item__header">
+            <div>
+              <span class="work-item__domain">Travel and Transport</span>
+              <h2 class="work-item__title">Touric Bus Transfers</h2>
+              <span class="work-item__period">Founder & Full-Stack Developer</span>
+            </div>
+            <div class="work-item__tags">
+              <span>PHP</span><span>MySQL</span><span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+          </div>
+          <p class="work-item__summary">
+            A full stack bus booking and transfers platform built as a final year project, featuring an interactive seat selection interface for passengers and a full admin panel for managing routes, drivers, buses, tickets and users in real time.
+          </p>
+
+          <!-- MEDIA TOGGLE -->
+          <div class="media-viewer" data-viewer>
+            <div class="media-viewer__toggle">
+              <button class="media-viewer__pill active" data-tab="frontend">Frontend</button>
+              <button class="media-viewer__pill" data-tab="drivers">Drivers</button>
+              <button class="media-viewer__pill" data-tab="routes">Routes</button>
+              <button class="media-viewer__pill" data-tab="buses">Buses</button>
+              <button class="media-viewer__pill" data-tab="tickets">Tickets</button>
+              <button class="media-viewer__pill" data-tab="users">Users</button>
+            </div>
+            <div class="media-viewer__frame">
+              <div class="media-viewer__panel active" data-panel="frontend">
+                <img src="assets/images/tourix.jpeg" alt="Tourix seat selection interface" />
+              </div>
+              <div class="media-viewer__panel" data-panel="drivers">
+                <img src="assets/images/TOURIX1.jpeg" alt="Tourix admin drivers panel" />
+                <p class="work-item__media-caption">Admin panel: driver management. The admin can register new drivers, assign buses to them and view license details, contact info and employment records across all 25+ entries.</p>
+              </div>
+              <div class="media-viewer__panel" data-panel="routes">
+                <img src="assets/images/TOURIX2.jpeg" alt="Tourix admin routes panel" />
+                <p class="work-item__media-caption">Admin panel: route management. The admin can create new routes with start points, end points and distances, and manage all destination terminals across the platform.</p>
+              </div>
+              <div class="media-viewer__panel" data-panel="buses">
+                <img src="assets/images/TOURIX3.jpeg" alt="Tourix admin buses panel" />
+                <p class="work-item__media-caption">Admin panel: bus management. Tracks each bus by number, type, model, engine type, capacity and plate number, with full add and delete controls.</p>
+              </div>
+              <div class="media-viewer__panel" data-panel="tickets">
+                <img src="assets/images/TOURIX4.jpeg" alt="Tourix admin tickets panel" />
+                <p class="work-item__media-caption">Admin panel: ticket management. Tracks bookings by user, bus, route, passenger count, travel date and price. The admin can register new travelers and monitor ticket status in real time.</p>
+              </div>
+              <div class="media-viewer__panel" data-panel="users">
+                <img src="assets/images/TOURIX5.jpeg" alt="Tourix admin users panel" />
+                <p class="work-item__media-caption">Admin panel: user management. Stores registered traveler profiles with contact details, gender and terms agreement status, with full CRUD controls.</p>
+              </div>
+            </div>
+          </div>
+
+          <ul class="work-item__bullets">
+            <li>Built an interactive seat selection modal with a visual bus layout showing rows, seat availability and selected state for passengers booking journeys.</li>
+            <li>Developed a full admin panel covering drivers, routes, buses, tickets and users, with paginated data tables and full CRUD controls across all modules.</li>
+            <li>Implemented route and destination terminal management, allowing admins to add new routes with start points, end points and distances.</li>
+            <li>Built a ticket management system tracking bookings by user, bus, route, passenger count, travel date, price and cancellation status.</li>
+            <li>Added driver registration with license details, bus assignment and real-time tracking capability built into the admin dashboard.</li>
+            <li>Designed a clean, accessible UI for both the passenger-facing booking flow and the admin portal.</li>
+          </ul>
+        </div>
+
+        <div class="work-divider"></div>
+
+          <!-- QUIZ TO CASH -->
+        <div class="work-item" id="quiztocash">
+          <div class="work-item__header">
+            <div>
+              <span class="work-item__domain">Crypto and Rewards</span>
+              <h2 class="work-item__title">Quiz to Cash — Crypto Rewards Platform</h2>
+              <span class="work-item__period">Founder & Full-Stack Developer</span>
+            </div>
+            <div class="work-item__tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Crypto Wallet Integration</span>
+            </div>
+          </div>
+          <p class="work-item__summary">
+            Quiz to Cash is a survey and engagement platform that rewards users with cryptocurrency for watching video ads, playing prediction games, completing surveys, participating in promotions and entering lotteries.
+          </p>
+
+          <div class="media-viewer" data-viewer>
+            <div class="media-viewer__toggle">
+              <button class="media-viewer__pill active" data-tab="hero">Homepage</button>
+              <button class="media-viewer__pill" data-tab="earn">Earn Modules</button>
+              <button class="media-viewer__pill" data-tab="auth">Auth</button>
+            </div>
+            <div class="media-viewer__frame">
+              <div class="media-viewer__panel active" data-panel="hero">
+                <img src="assets/images/QUIZ%20TO%20CASH1.jpeg" alt="Quiz to Cash homepage hero" />
+              </div>
+              <div class="media-viewer__panel" data-panel="earn">
+                <img src="assets/images/QUIZ%20TO%20CASH2.jpeg" alt="Quiz to Cash earn modules" />
+                <img src="assets/images/QUIZ%20TO%20CASH3.jpeg" alt="Quiz to Cash earn features" />
+                <p class="work-item__media-caption">Earn modules covering surveys, ads engagement, offers, game predictions, special giveaways and referrals. Each module links out to a detailed earn flow.</p>
+              </div>
+              <div class="media-viewer__panel" data-panel="auth">
+                <img src="assets/images/QUIZ%20TO%20CASH5.jpeg" alt="Quiz to Cash sign up and wallet connect flow" />
+                <p class="work-item__media-caption">Two-step onboarding: users create an account then connect their crypto wallet. The sign-up form includes first name, last name, email, password and confirmation with alphanumeric validation.</p>
+              </div>
+            </div>
+          </div>
+
+          <ul class="work-item__bullets">
+            <li>Built the complete frontend for a crypto rewards platform covering homepage, earn modules, auth flow and wallet connection.</li>
+            <li>Designed the earn system UI covering six modules: surveys, ads engagement, offers, special giveaways, game predictions and referrals.</li>
+            <li>Implemented a two-step onboarding flow with account creation and crypto wallet connection.</li>
+            <li>Delivered a dark-themed, responsive interface consistent with the platform's crypto-native brand identity.</li>
+          </ul>
+        </div>
+
+        <div class="work-divider"></div>
+
+        <!-- IHEALTH -->
+        <div class="work-item" id="ihealth">
+          <div class="work-item__header">
+            <div>
+              <span class="work-item__domain">Healthcare and Data</span>
+              <h2 class="work-item__title">iHealth — Medical Data Extraction Pipeline</h2>
+              <span class="work-item__period">Feb 2024 – May 2024 &nbsp;·&nbsp; Volunteer &nbsp;·&nbsp; Remote · United States</span>
+            </div>
+            <div class="work-item__tags">
+              <span>Python</span><span>BeautifulSoup</span><span>Selenium</span><span>Scrapy</span><span>Pandas</span>
+            </div>
+          </div>
+          <p class="work-item__summary">
+            Built automated web scraping pipelines to extract, clean and normalize structured medical content from major health platforms including CDC, WHO, Mayo Clinic and WebMD, feeding iHealth's medical knowledge base.
+          </p>
+
+          <div class="media-viewer" data-viewer>
+            <div class="media-viewer__toggle">
+              <button class="media-viewer__pill active" data-tab="search">Doctor Search</button>
+              <button class="media-viewer__pill" data-tab="scraper">Scraper in Action</button>
+              <button class="media-viewer__pill" data-tab="profile">Profile Extraction</button>
+            </div>
+            <div class="media-viewer__frame">
+              <div class="media-viewer__panel active" data-panel="search">
+                <img src="assets/images/ihealth1.jpeg" alt="iHealth MediFind doctor search results" />
+              </div>
+              <div class="media-viewer__panel" data-panel="scraper">
+                <img src="assets/images/ihealth3.jpeg" alt="iHealth scraper running in VS Code with Chrome automation" />
+                <p class="work-item__media-caption">Selenium controlling Chrome to navigate and extract data from MediFind in real time. The VS Code workspace shows the multi-script pipeline including link scrapers, profile extractors and ETL scripts outputting to CSV.</p>
+              </div>
+              <div class="media-viewer__panel" data-panel="profile">
+                <img src="assets/images/ihealth5.jpeg" alt="iHealth doctor profile detail extraction" />
+                <p class="work-item__media-caption">Individual doctor profile pages scraped for specialty, location, insurance, availability and expertise ratings. Data was normalized and structured for integration into iHealth's medical knowledge base.</p>
+              </div>
+            </div>
+          </div>
+
+          <ul class="work-item__bullets">
+            <li>Extracted structured medical content from official health websites including CDC, WHO, Mayo Clinic and WebMD.</li>
+            <li>Built automated scraping pipelines using BeautifulSoup, Selenium and Scrapy, handling dynamic page loading and anti-bot techniques.</li>
+            <li>Normalized scraped data into clean, structured datasets ready for research and content integration.</li>
+            <li>Identified and flagged broken medical references, duplicate entries and misinformation, improving the accuracy of iHealth's knowledge base.</li>
+          </ul>
+        </div>
+
+        <div class="work-divider"></div>
+
+        <!-- PBM GEARS -->
+        <div class="work-item" id="pbmgears">
+          <div class="work-item__header">
+            <div>
+              <span class="work-item__domain">E-commerce</span>
+              <h2 class="work-item__title">PBM Gears — Apparel E-Commerce Platform</h2>
+             <span class="work-item__period">Feb 2024 – May 2024 &nbsp;·&nbsp; Remote · Austria</span>
+            </div>
+            <div class="work-item__tags">
+              <span>React</span><span>Tailwind CSS</span><span>Node.js</span><span>Express</span><span>MongoDB</span><span>Stripe</span>
+            </div>
+          </div>
+          <p class="work-item__summary">
+            A full-stack e-commerce web application for a streetwear brand specialising in caps, hoodies and t-shirts, covering the complete shopping experience from catalogue browsing to order confirmation.
+          </p>
+
+          <div class="media-viewer" data-viewer>
+            <div class="media-viewer__toggle">
+              <button class="media-viewer__pill active" data-tab="store">Storefront</button>
+              <button class="media-viewer__pill" data-tab="video">Walkthrough</button>
+            </div>
+            <div class="media-viewer__frame">
+              <div class="media-viewer__panel active" data-panel="store">
+                <img src="assets/images/PBM%20Gears.jpeg" alt="PBM Gears storefront product catalogue" />
+              </div>
+              <div class="media-viewer__panel" data-panel="video">
+                <video autoplay muted loop playsinline>
+                  <source src="assets/videos/PBM%20Gears.mp4" type="video/mp4" />
+                </video>
+                <span class="media-viewer__live"><span class="media-viewer__dot"></span> Platform walkthrough</span>
+              </div>
+            </div>
+          </div>
+
+          <ul class="work-item__bullets">
+            <li>Built a full-stack e-commerce platform using React and Tailwind CSS on the frontend, with a Node.js and Express backend connected to MongoDB.</li>
+            <li>Developed a product catalogue with category, size and color filtering, individual product pages with image galleries, size guides and add-to-cart functionality.</li>
+            <li>Implemented a shopping cart with quantity controls, item removal and subtotal review before checkout.</li>
+            <li>Built a multi-step checkout flow covering shipping details, order summary and Stripe payment processing, designed to reduce drop-off at point of purchase.</li>
+            <li>Used Context API for lightweight cart state management across the application.</li>
+            <li>Delivered an order confirmation page displaying order ID and receipt summary on successful payment.</li>
+          </ul>
+        </div>
+
+        <div class="work-divider"></div>
+
+        <!-- FLASH LOAN ARBITRAGE -->
+        <div class="work-item" id="web3">
+          <div class="work-item__header">
+            <div>
+              <span class="work-item__domain">Web3 and DeFi</span>
+              <h2 class="work-item__title">Flash Loan Arbitrage Contracts</h2>
+              <span class="work-item__period">Personal Project</span>
+            </div>
+            <div class="work-item__tags">
+              <span>Solidity</span><span>Web3.js</span><span>Aave</span><span>Uniswap</span><span>Tenderly</span>
+            </div>
+          </div>
+          <p class="work-item__summary">
+            Flash loan smart contracts that take advantage of price differences between two exchanges — borrowing from the lower-priced exchange and selling on the higher-priced one, all completed in seconds within a single on-chain transaction.
+          </p>
+
+          <!-- MEDIA TOGGLE -->
+          <div class="media-viewer" data-viewer>
+            <div class="media-viewer__toggle">
+              <button class="media-viewer__pill active" data-tab="screenshots">Screenshots</button>
+            </div>
+            <div class="media-viewer__frame">
+              <div class="media-viewer__panel active" data-panel="screenshots">
+                <img src="assets/images/FL1.jpeg" alt="Flash loan arbitrage overview" />
+                <img src="assets/images/FL2.jpeg" alt="Flash loan contract architecture" />
+                <img src="assets/images/FL3.jpeg" alt="Flash loan execution flow" />
+                <img src="assets/images/FL4.jpeg" alt="Flash loan exchange comparison" />
+                <img src="assets/images/FL5.jpeg" alt="Flash loan transaction details" />
+                <img src="assets/images/FL6.jpeg" alt="Flash loan results" />
+              </div>
+            </div>
+          </div>
+
+          <ul class="work-item__bullets">
+            <li>Built smart contracts to execute instant arbitrage trades across DEXs with zero capital risk using flash loans.</li>
+            <li>Detects price discrepancies between exchanges and executes borrow-buy-sell-repay sequence atomically.</li>
+            <li>Ensured cost-efficiency through gas optimization and transaction simulation via Tenderly.</li>
+            <li>Achieved atomic execution — profit or full revert — within a single on-chain transaction.</li>
+          </ul>
+        </div>
+
+        <div class="work-divider"></div>
+   
+        <!-- STOCKS AND BONDS -->
+        <div class="work-item" id="fintech">
+          <div class="work-item__header">
+            <div>
+              <span class="work-item__domain">Fintech</span>
+              <h2 class="work-item__title">Stocks and Bonds Capital</h2>
+              <span class="work-item__period">Nov 2024 – Mar 2025 &nbsp;·&nbsp;Remote · Toronto, Canada</span>
+            </div>
+            <div class="work-item__tags">
+              <span>PHP</span><span>MySQL</span><span>JavaScript</span><span>HTML</span><span>CSS</span><span>External APIs</span>
+            </div>
+          </div>
+          <p class="work-item__summary">
+            A full trading platform where users buy, swap and manage stocks and bonds using crypto payments, with account tiers and a complete admin panel.
+          </p>
+
+          <!-- MEDIA TOGGLE -->
+          <div class="media-viewer" data-viewer>
+            <div class="media-viewer__toggle">
+              <button class="media-viewer__pill active" data-tab="screenshots">Screenshots</button>
+            </div>
+            <div class="media-viewer__frame">
+              <div class="media-viewer__panel active" data-panel="screenshots">
+                <img src="assets/images/SAB.jpeg" alt="Stocks and Bonds Capital platform" />
+              </div>
+            </div>
+          </div>
+
+          <ul class="work-item__bullets">
+            <li>Built the frontend using HTML, CSS and JavaScript, and built the backend in PHP with a MySQL database.</li>
+            <li>Implemented account tiers (Basic, Standard, Premium) with upgrade logic tied to user permissions and features.</li>
+            <li>Added a Blackcard system allowing users to withdraw earnings from purchased stocks.</li>
+            <li>Integrated automated stock and cryptocurrency price updates using external APIs.</li>
+            <li>Developed a full admin panel to manage users, transactions, card requests, payments and account levels.</li>
+            <li>Implemented secure crypto deposit handling and balance updates for user trading accounts.</li>
+            <li>Optimized UI/UX across the platform and ensured responsive layouts for both desktop and mobile users.</li>
+          </ul>
+        </div>
+
+        <div class="work-divider"></div>
+
+        <!-- TOKEN PLATFORM -->
+        <div class="work-item" id="token">
+          <div class="work-item__header">
+            <div>
+              <span class="work-item__domain">Web3</span>
+              <h2 class="work-item__title">Token and NFT Launch Automation Platform</h2>
+              <span class="work-item__period">Apr 2025 – Jun 2025 &nbsp;·&nbsp; Remote · United Kingdom</span>
+            </div>
+            <div class="work-item__tags">
+              <span>Solidity</span><span>Web3.js</span><span>Node.js</span><span>MetaMask</span><span>JWT</span>
+            </div>
+          </div>
+          <p class="work-item__summary">
+            Backend logic and smart contract infrastructure to deploy ERC-20 and ERC-721 tokens and automate presale processes.
+          </p>
+          <ul class="work-item__bullets">
+            <li>Developed backend logic to deploy ERC-20 and ERC-721 contracts and automate presale processes via Web3.js and Solidity.</li>
+            <li>Designed the system to track wallet contributions and handle auto-whitelisting using smart contracts.</li>
+            <li>Built secure user authentication using MetaMask and JWTs for wallet-bound login sessions.</li>
+          </ul>
+        </div>
+
+        <div class="work-divider"></div>
+
+        <!-- UNIVERSITY OF DUNDEE -->
+        <div class="work-item" id="healthcare">
+          <div class="work-item__header">
+            <div>
+              <span class="work-item__domain">Healthcare and Medical Software</span>
+              <h2 class="work-item__title">University of Dundee — Laser Surgery GUI</h2>
+              <span class="work-item__period">Jul 2024 – Oct 2024 &nbsp;·&nbsp; Remote · Scotland</span>
+            </div>
+            <div class="work-item__tags">
+              <span>Python</span><span>GUI</span><span>Medical Algorithms</span>
+            </div>
+          </div>
+          <p class="work-item__summary">
+            Designed and developed a Python GUI for a hospital application used in laser eye surgery procedures, requiring precise scientific calculations and seamless integration with the hospital's existing software infrastructure.
+          </p>
+          <ul class="work-item__bullets">
+            <li>Created algorithms for calculating laser geometry, eye hazard distance, skin hazard and laser wavelength.</li>
+            <li>Implemented complex calculations involving watts, joules, milliwatts and meters per second.</li>
+            <li>Developed both frontend and backend components of the GUI using Python.</li>
+            <li>Integrated the GUI into the hospital's existing software infrastructure for seamless operation.</li>
+            <li>Collaborated with medical professionals to ensure all calculations met clinical requirements.</li>
+            <li>Conducted extensive testing to validate accuracy and reliability for live medical use.</li>
+          </ul>
+        </div>
+
+        <div class="work-divider"></div>
+
+
+        <!-- SWIFTSTACK -->
+        <div class="work-item" id="swiftstack">
+          <div class="work-item__header">
+            <div>
+              <span class="work-item__domain">Fintech</span>
+              <h2 class="work-item__title">SwiftStack Stocks</h2>
+              <span class="work-item__period">Jan 2024 – Feb 2025 &nbsp;·&nbsp; Remote · United Kingdom</span>
+            </div>
+            <div class="work-item__tags">
+              <span>React</span><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Third-party APIs</span>
+            </div>
+          </div>
+          <p class="work-item__summary">
+            Developed and maintained the user interface for a UK-based stocks trading platform, working with designers and backend developers to deliver responsive, engaging experiences for traders and investors.
+          </p>
+          <ul class="work-item__bullets">
+            <li>Utilized React.js to create dynamic and interactive components, ensuring a smooth and engaging user experience.</li>
+            <li>Redesigned registration and login forms, improving usability and reducing user drop-off rates by 20%.</li>
+            <li>Optimized website performance and speed, resulting in a 30% increase in page load times and overall user satisfaction.</li>
+            <li>Integrated third-party APIs to provide real-time stock data and market updates, keeping users informed and engaged.</li>
+            <li>Conducted regular usability testing and gathered feedback to continuously improve functionality and user experience.</li>
+            <li>Provided technical support and troubleshooting for frontend-related issues, ensuring a smooth and error-free user experience.</li>
+          </ul>
+        </div>
+
+
+        </div>
+    </section>
+
+    <!-- CTA BANNER -->
+    <section class="cta-banner section">
+      <div class="container">
+        <div class="cta-banner__inner">
+        <div class="cta-banner__noise"></div>
+        <span class="cta-banner__corner cta-banner__corner--tl"></span>
+        <span class="cta-banner__corner cta-banner__corner--tr"></span>
+        <span class="cta-banner__corner cta-banner__corner--bl"></span>
+        <span class="cta-banner__corner cta-banner__corner--br"></span>
+
+        <p class="cta-banner__eyebrow">// Open to work</p>
+        <h2 class="cta-banner__heading">Got a system to build?</h2>
+        <p class="cta-banner__sub">Freelance, remote contracts and full-time roles. Let's talk about what you need.</p>
+        <a href="contact.html" class="btn btn--cta-banner">Start a Conversation</a>
+      </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <span class="footer__logo">
+          <span class="nav__logo-bracket">[</span>OF<span class="nav__logo-bracket">]</span>
+        </span>
+        <p class="footer__copy">Onoyima Francis &copy; 2026</p>
+        <div class="footer__links">
+          <a href="mailto:francisonoyima23@gmail.com" class="footer__link">Email</a>
+          <a href="https://www.linkedin.com/in/onoyima-francis-3aabab253/" class="footer__link">LinkedIn</a>
+          <a href="https://github.com/Francisemeka" class="footer__link">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets\javascript\main.js"></script>
+  <script>
+    // Media viewer tab switching
+    document.querySelectorAll('[data-viewer]').forEach(viewer => {
+      const pills = viewer.querySelectorAll('.media-viewer__pill');
+      const panels = viewer.querySelectorAll('.media-viewer__panel');
+
+      pills.forEach(pill => {
+        pill.addEventListener('click', () => {
+          const target = pill.dataset.tab;
+
+          pills.forEach(p => p.classList.remove('active'));
+          panels.forEach(p => {
+            p.classList.remove('active');
+            // pause videos in inactive panels
+            p.querySelectorAll('video').forEach(v => v.pause());
+          });
+
+          pill.classList.add('active');
+          const activePanel = viewer.querySelector(`[data-panel="${target}"]`);
+          activePanel.classList.add('active');
+          // play videos in active panel
+          activePanel.querySelectorAll('video').forEach(v => v.play());
+        });
+      });
+    });
+  </script>
+</body>
+</html>

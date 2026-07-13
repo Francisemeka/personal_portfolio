@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | Onoyima Francis</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:wght@300;400;500&family=Epilogue:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <a href="index.html" class="nav__logo">
+      <span class="nav__logo-bracket">[</span>OF<span class="nav__logo-bracket">]</span>
+    </a>
+    <ul class="nav__links" id="navLinks">
+      <li><a href="index.html" class="nav__link">Home</a></li>
+      <li><a href="work.html" class="nav__link">Work</a></li>
+      <li><a href="about.html" class="nav__link active">About</a></li>
+      <li><a href="contact.html" class="nav__link nav__link--cta">Let's Talk</a></li>
+    </ul>
+    <div class="nav__right">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle light/dark mode">
+        <span class="theme-toggle__track"><span class="theme-toggle__thumb"><svg class="icon-sun" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg><svg class="icon-moon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg></span></span>
+      </button>
+      <button class="nav__hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+ <div class="mobile-menu" id="mobileMenu">
+  <ul>
+    <li style="--i:0"><a href="index.html" onclick="closeMobileMenu()"><span class="mm-num">01</span>Home</a></li>
+    <li style="--i:1"><a href="work.html" onclick="closeMobileMenu()"><span class="mm-num">02</span>Work</a></li>
+    <li style="--i:2"><a href="about.html" onclick="closeMobileMenu()"><span class="mm-num">03</span>About</a></li>
+    <li style="--i:3"><a href="contact.html" onclick="closeMobileMenu()"><span class="mm-num">04</span>Let's Talk</a></li>
+  </ul>
+</div>
+
+  <main>
+
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+      <div class="container">
+        <div class="section-label">
+          <span class="section-label__line"></span>
+          <span class="section-label__text">About</span>
+        </div>
+        <h1 class="page-hero__heading">
+          The developer<br />
+          <span class="muted-text">behind the work.</span>
+        </h1>
+      </div>
+    </section>
+
+    <!-- BIO SECTION -->
+    <section class="about-bio section" style="padding-top: 2rem;">
+      <div class="container">
+        <div class="about-bio__grid">
+
+          <div class="about-bio__text">
+            <p class="about-bio__lead">
+              I'm Onoyima Francis a full stack developer based in Lagos, Nigeria, with 5+ years building the systems that power real products.
+            </p>
+            <p>
+              My background spans aviation safety platforms, fintech trading systems, healthcare software, Web3 infrastructure and e-commerce across clients in the US, UK, Canada and Scotland. I work best where the problem is complex and the stakes are real.
+            </p>
+            <p>
+              I'm comfortable across the full stack: PHP, Node.js, Python and Solidity on the backend; React, JavaScript, HTML and CSS on the frontend; MySQL and PostgreSQL for database. I understand authentication, API integration, database architecture and how to build systems that are both secure and maintainable.
+            </p>
+            <p>
+              I studied Computer Science at the University of Nigeria, Nsukka, where I also led a team building the university's website. I've since worked with startups, remote teams and research institutions delivering software that ships and holds up.
+            </p>
+            <div class="about-bio__ctas">
+              <a href="contact.html" class="btn btn--primary">Get in Touch</a>
+              <a href="mailto:francisonoyima23@gmail.com" class="btn btn--ghost">Email Me</a>
+            </div>
+
+<div class="how-i-work">
+  <div class="how-i-work__label">How I Work</div>
+  <ol class="how-i-work__list">
+    <li>
+      <span class="how-i-work__num">01</span>
+      <p> <span class="how-i-work_span">Clarify requirements first</span>. I ask what needs to be built, how it should work, and when it should be delivered.</p>
+    </li>
+    <li>
+      <span class="how-i-work__num">02</span>
+      <p><span class="how-i-work_span">Adapt to the project</span>. For solo projects, I often begin with the frontend to validate the user experience. In team environments, I typically focus on backend architecture, APIs, and integrations.</p>
+    </li>
+    <li>
+      <span class="how-i-work__num">03</span>
+      <p><span class="how-i-work_span">Measure twice, ship once</span>. I review and test my work carefully before moving on to the next task.</p>
+    </li>
+  </ol>
+</div>
+          </div>
+
+
+          <div class="about-bio__aside">
+            <div class="about-photo" id="aboutPhotoWrap">
+              <img src="assets/images/about.jpeg" alt="Onoyima Francis" onerror="this.closest('#aboutPhotoWrap').style.display='none'" />
+            </div>
+            <div class="about-cards-grid">
+              <div class="about-card">
+                <div class="about-card__label">Location</div>
+                <div class="about-card__value">Lagos, Nigeria</div>
+              </div>
+              <div class="about-card">
+                <div class="about-card__label">Availability</div>
+                <div class="about-card__value about-card__value--green">
+                  <span class="hero__dot" style="display:inline-block;margin-right:0.5rem;"></span>Open to remote work
+                </div>
+              </div>
+              <div class="about-card">
+                <div class="about-card__label">Education</div>
+                <div class="about-card__value">B.Sc. Computer Science<br /><span style="color:var(--muted);font-size:0.85em;">University of Nigeria, Nsukka</span></div>
+              </div>
+              <div class="about-card">
+                <div class="about-card__label">Contact</div>
+                <div class="about-card__value"><a href="mailto:francisonoyima23@gmail.com" style="color:var(--accent)">francisonoyima23@gmail.com</a></div>
+              </div>
+              <div class="about-card">
+                <div class="about-card__label">Phone</div>
+                <div class="about-card__value">+234 704 802 7329</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section class="skills-section section" style="padding-top:0;">
+      <div class="container">
+        <div class="section-label">
+          <span class="section-label__line"></span>
+          <span class="section-label__text">Skills</span>
+        </div>
+        <h2 class="section-heading">
+          What I work with.
+        </h2>
+
+        <div class="skills-grid">
+          <div class="skill-group">
+            <h3 class="skill-group__title">Frontend</h3>
+            <ul class="skill-group__list">
+              <li>HTML5 and CSS3</li>
+              <li>JavaScript (ES6+)</li>
+              <li>React.js</li>
+              <li>Responsive Design</li>
+              <li>UI/UX Implementation</li>
+              <li>SEO</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3 class="skill-group__title">Backend</h3>
+            <ul class="skill-group__list">
+              <li>PHP</li>
+              <li>Node.js and Express</li>
+              <li>Python</li>
+              <li>RESTful API Design</li>
+              <li>Laravel</li>
+              <li>Authentication and Authorization</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3 class="skill-group__title">Database</h3>
+            <ul class="skill-group__list">
+              <li>MySQL</li>
+              <li>PostgreSQL</li>
+              <li>Schema Design</li>
+              <li>Multi-database Operations</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3 class="skill-group__title">Web3</h3>
+            <ul class="skill-group__list">
+              <li>Solidity</li>
+              <li>Web3.js</li>
+              <li>Smart Contracts</li>
+              <li>Aave and Uniswap Protocols</li>
+              <li>ERC-20 and ERC-721</li>
+              <li>MetaMask Auth</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3 class="skill-group__title">Integrations</h3>
+            <ul class="skill-group__list">
+              <li>Azure AD and AWS Cognito (SSO)</li>
+              <li>Stripe Payments</li>
+              <li>Twilio (SMS and Email OTP)</li>
+              <li>KoboToolbox API</li>
+              <li>Moralis and Alchemy</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3 class="skill-group__title">Tools and Process</h3>
+            <ul class="skill-group__list">
+              <li>Git and Version Control</li>
+              <li>CI/CD Pipelines</li>
+              <li>Render and Cloud Deployment</li>
+              <li>Performance Optimization</li>
+              <li>Security Best Practices</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE TIMELINE -->
+    <section class="experience-section section" style="padding-top:0;">
+      <div class="container">
+        <div class="section-label">
+          <span class="section-label__line"></span>
+          <span class="section-label__text">Experience</span>
+        </div>
+        <h2 class="section-heading">
+          Where I've worked.
+        </h2>
+
+        <div class="timeline">
+
+          <div class="timeline__item reveal">
+            <div class="timeline__meta">
+              <span class="timeline__period">Aug 2025 – Oct 2025</span>
+              <span class="timeline__location">Remote · Lagos</span>
+            </div>
+            <div class="timeline__content">
+              <span class="timeline__company">Coinbase Encryption Vault</span>
+              <h3 class="timeline__role">Full Stack Developer Authentication and KYC</h3>
+              <p>Built a complete authentication and KYC verification system for a crypto-security platform requiring strong identity checks for no-collateral borrowing.</p>
+            </div>
+          </div>
+
+          <div class="timeline__item reveal">
+            <div class="timeline__meta">
+              <span class="timeline__period">Jun 2025 – Aug 2025</span>
+              <span class="timeline__location">Remote · United States</span>
+            </div>
+            <div class="timeline__content">
+              <span class="timeline__company">NightBright</span>
+              <h3 class="timeline__role">Full Stack Developer</h3>
+              <p>Contributed to a Laravel donation platform supporting evangelist-led charitable causes, working across two-server architecture on auth, payments and dashboards.</p>
+            </div>
+          </div>
+
+          <div class="timeline__item reveal">
+            <div class="timeline__meta">
+              <span class="timeline__period">Dec 2024 – Sep 2025</span>
+              <span class="timeline__location">Remote · United States</span>
+            </div>
+            <div class="timeline__content">
+              <span class="timeline__company">SERA Aviation Safety Platform</span>
+              <h3 class="timeline__role">Full Stack Developer</h3>
+              <p>Built SSO authentication, KoboToolbox API integration and dynamic dashboards for an aviation incident reporting system used by US airlines.</p>
+            </div>
+          </div>
+
+          <div class="timeline__item reveal">
+            <div class="timeline__meta">
+              <span class="timeline__period">Nov 2024 – Mar 2025</span>
+              <span class="timeline__location">Remote · Toronto</span>
+            </div>
+            <div class="timeline__content">
+              <span class="timeline__company">Stocks and Bonds Capital</span>
+              <h3 class="timeline__role">Full Stack Web Developer</h3>
+              <p>Built a full trading platform with account tiers, crypto payments, automated price feeds and an admin panel from the ground up.</p>
+            </div>
+          </div>
+
+          <div class="timeline__item reveal">
+            <div class="timeline__meta">
+              <span class="timeline__period">Jan 2024 – Feb 2025</span>
+              <span class="timeline__location">Remote · United Kingdom</span>
+            </div>
+            <div class="timeline__content">
+              <span class="timeline__company">SwiftStack Stocks</span>
+              <h3 class="timeline__role">Frontend Web Developer</h3>
+              <p>Built and maintained the UI for a UK trading platform using React, improving page load times by 30% and reducing sign-up drop-off by 20%.</p>
+            </div>
+          </div>
+
+          <div class="timeline__item reveal">
+            <div class="timeline__meta">
+              <span class="timeline__period">Jul 2024 – Oct 2024</span>
+              <span class="timeline__location">Remote · Scotland</span>
+            </div>
+            <div class="timeline__content">
+              <span class="timeline__company">University of Dundee</span>
+              <h3 class="timeline__role">Backend Software Developer</h3>
+              <p>Built a Python GUI for a hospital laser eye surgery application, implementing precise scientific calculations verified by medical professionals.</p>
+            </div>
+          </div>
+
+          <div class="timeline__item reveal">
+            <div class="timeline__meta">
+              <span class="timeline__period">Oct 2024 – May 2025</span>
+              <span class="timeline__location">Remote · Lagos</span>
+            </div>
+            <div class="timeline__content">
+              <span class="timeline__company">iHealthRemote</span>
+              <h3 class="timeline__role">Volunteer Web Scraper and Medical Data Extractor</h3>
+              <p>Built automated scraping pipelines in Python (BeautifulSoup, Selenium, Scrapy) to extract and normalize medical content from CDC, WHO, Mayo Clinic and WebMD.</p>
+            </div>
+          </div>
+
+          <div class="timeline__item reveal">
+            <div class="timeline__meta">
+              <span class="timeline__period">Jun 2023 – Sep 2025</span>
+              <span class="timeline__location">Enugu State, Nigeria</span>
+            </div>
+            <div class="timeline__content">
+              <span class="timeline__company">University of Nigeria, Nsukka</span>
+              <h3 class="timeline__role">Senior Web Developer (Leadership)</h3>
+              <p>Led a team building the university's website with a PHP-based CMS, managing the full development lifecycle from requirements through deployment.</p>
+            </div>
+          </div>
+
+          <div class="timeline__item reveal">
+            <div class="timeline__meta">
+              <span class="timeline__period">Feb 2023 – May 2023</span>
+              <span class="timeline__location">Remote · Canada</span>
+            </div>
+            <div class="timeline__content">
+              <span class="timeline__company">Smart Rental Deals</span>
+              <h3 class="timeline__role">Full Stack Web Developer</h3>
+              <p>Built a hotel and resort reservation platform with Node.js APIs, secure payment gateways and an investment analytics portal.</p>
+            </div>
+          </div>
+
+          <div class="timeline__item reveal">
+            <div class="timeline__meta">
+              <span class="timeline__period">Jan 2022 – Present</span>
+              <span class="timeline__location">Lagos, Nigeria</span>
+            </div>
+            <div class="timeline__content">
+              <span class="timeline__company">Sports Bet Kings</span>
+              <h3 class="timeline__role">Full Stack Web Developer</h3>
+              <p>Developed and maintained a dynamic sports betting platform with live streaming, real-time betting and a full PHP admin dashboard.</p>
+            </div>
+          </div>
+
+          <div class="timeline__item reveal">
+            <div class="timeline__meta">
+              <span class="timeline__period">May 2022 – July 2023</span>
+              <span class="timeline__location">Remote · United Kingdom</span>
+            </div>
+            <div class="timeline__content">
+              <span class="timeline__company">Technews Daily Finance</span>
+              <h3 class="timeline__role">Frontend Web Developer</h3>
+              <p>Built and maintained the UI for a tech and finance news blog covering Forex and crypto markets, with real-time API integrations.</p>
+            </div>
+          </div>
+
+          <div class="timeline__item reveal">
+            <div class="timeline__meta">
+              <span class="timeline__period">Nov 2021 – Jan 2022</span>
+              <span class="timeline__location">Remote · Lagos, Nigeria</span>
+            </div>
+            <div class="timeline__content">
+              <span class="timeline__company">Groove Bank</span>
+              <h3 class="timeline__role">Full Stack Web Developer</h3>
+              <p>Developed and maintained the Groove Bank website using Python for the admin dashboard, with robust security and third-party API integrations.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA BANNER -->
+        <section class="cta-banner section">
+      <div class="container">
+        <div class="cta-banner__inner">
+        <div class="cta-banner__noise"></div>
+        <span class="cta-banner__corner cta-banner__corner--tl"></span>
+        <span class="cta-banner__corner cta-banner__corner--tr"></span>
+        <span class="cta-banner__corner cta-banner__corner--bl"></span>
+        <span class="cta-banner__corner cta-banner__corner--br"></span>
+
+        <p class="cta-banner__eyebrow">// Open to work</p>
+        <h2 class="cta-banner__heading">Let's Build Something</h2>
+        <p class="cta-banner__sub">Freelance, remote contracts and full-time roles. Let's talk about what you need.</p>
+        <a href="contact.html" class="btn btn--cta-banner">Start a Conversation</a>
+      </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <span class="footer__logo">
+          <span class="nav__logo-bracket">[</span>OF<span class="nav__logo-bracket">]</span>
+        </span>
+        <p class="footer__copy">Onoyima Francis &copy; 2026</p>
+        <div class="footer__links">
+          <a href="mailto:francisonoyima23@gmail.com" class="footer__link">Email</a>
+          <a href="https://www.linkedin.com/in/onoyima-francis-3aabab253/" class="footer__link">LinkedIn</a>
+          <a href="https://github.com/Francisemeka" class="footer__link">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets\javascript\main.js"></script>
+</body>
+</html>

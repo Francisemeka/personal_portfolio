@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Onoyima Francis | Full Stack Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Syne:wght@400;600;700;800&family=DM+Mono:wght@300;400;500&family=Epilogue:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" /> 
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <a href="index.html" class="nav__logo">
+      <span class="nav__logo-bracket">[</span>OF<span class="nav__logo-bracket">]</span>
+    </a>
+    <ul class="nav__links" id="navLinks">
+      <li><a href="index.html" class="nav__link active">Home</a></li>
+      <li><a href="work.html" class="nav__link">Work</a></li>
+      <li><a href="about.html" class="nav__link">About</a></li>
+      <li><a href="contact.html" class="nav__link nav__link--cta">Let's Talk</a></li>
+    </ul>
+    <div class="nav__right">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle light/dark mode">
+        <span class="theme-toggle__track">
+          <span class="theme-toggle__thumb">
+            <svg class="icon-sun" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+            <svg class="icon-moon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+          </span>
+        </span>
+      </button>
+      <button class="nav__hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+  <ul>
+    <li style="--i:0"><a href="index.html" onclick="closeMobileMenu()"><span class="mm-num">01</span>Home</a></li>
+    <li style="--i:1"><a href="work.html" onclick="closeMobileMenu()"><span class="mm-num">02</span>Work</a></li>
+    <li style="--i:2"><a href="about.html" onclick="closeMobileMenu()"><span class="mm-num">03</span>About</a></li>
+    <li style="--i:3"><a href="contact.html" onclick="closeMobileMenu()"><span class="mm-num">04</span>Let's Talk</a></li>
+  </ul>
+</div>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero__bg-dots"></div>
+
+      <div class="hero__content">
+        <div class="hero__eyebrow">
+          <span class="hero__dot"></span>
+          <span class="hero__status">Available for remote work</span>
+        </div>
+
+        <h1 class="hero__heading">
+          I build the<br />
+          systems <em class="hero__serif">behind</em><br />
+          <span class="hero__heading-accent">the product.</span>
+        </h1>
+
+        <p class="hero__sub">
+          Full stack developer with 4+ years building secure, scalable web systems
+          across fintech, aviation, healthcare and Web3.
+        </p>
+
+        <div class="hero__chips">
+          <span class="chip chip--blue">PHP</span>
+          <span class="chip chip--green">Node.js</span>
+          <span class="chip chip--yellow">React</span>
+          <span class="chip chip--purple">Solidity</span>
+          <span class="chip chip--orange">Python</span>
+          <span class="chip chip--teal">MySQL</span>
+        </div>
+
+        <div class="hero__ctas">
+          <a href="work.html" class="btn btn--primary">See My Work</a>
+          <a href="contact.html" class="btn btn--ghost">Let's Talk</a>
+        </div>
+      </div>
+
+      <!-- TERMINAL CARD -->
+      <div class="hero__terminal-wrap">
+        <div class="hero__terminal">
+          <div class="hero__terminal-bar">
+            <span class="hero__terminal-dot red"></span>
+            <span class="hero__terminal-dot yellow"></span>
+            <span class="hero__terminal-dot green"></span>
+            <span class="hero__terminal-filename">francis.config.js</span>
+          </div>
+          <div class="hero__terminal-body">
+            <p><span class="t-muted">const</span> <span class="t-blue">dev</span> <span class="t-muted">= {</span></p>
+            <p>&nbsp;&nbsp;<span class="t-green">name</span><span class="t-muted">:</span> <span class="t-yellow">"Onoyima Francis"</span><span class="t-muted">,</span></p>
+            <p>&nbsp;&nbsp;<span class="t-green">stack</span><span class="t-muted">: [</span><span class="t-yellow">"PHP"</span><span class="t-muted">,</span> <span class="t-yellow">"Node"</span><span class="t-muted">,</span> <span class="t-yellow">"React"</span><span class="t-muted">,</span> <span class="t-yellow">"Solidity"</span><span class="t-muted">],</span></p>
+            <p>&nbsp;&nbsp;<span class="t-green">years</span><span class="t-muted">:</span> <span class="t-purple">4</span><span class="t-muted">,</span></p>
+            <p>&nbsp;&nbsp;<span class="t-green">status</span><span class="t-muted">:</span> <span class="t-yellow">"<span class="cursor-blink">open to work</span>"</span></p>
+            <p><span class="t-muted">}</span></p>
+          </div>
+        </div>
+
+
+      </div>
+
+    </section>
+
+    <!-- STATS STRIP -->
+    <section class="stats">
+      <div class="stats__inner">
+        <div class="stats__item">
+          <span class="stats__sub">Experience</span>
+          <span class="stats__number">5<span class="stats__plus">+</span></span>
+          <span class="stats__label">Years building production systems</span>
+        </div>
+        <div class="stats__item">
+          <span class="stats__sub">Output</span>
+          <span class="stats__number">11<span class="stats__plus">+</span></span>
+          <span class="stats__label">Platforms built end to end</span>
+        </div>
+        <div class="stats__item">
+          <span class="stats__sub">Reach</span>
+          <span class="stats__number">5<span class="stats__plus">+</span></span>
+          <span class="stats__label">Industries served</span>
+        </div>
+        <div class="stats__item">
+          <span class="stats__sub">Global</span>
+          <span class="stats__number">3</span>
+          <span class="stats__label">Continents worked across</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHAT I DO -->
+    <section class="pillars section">
+      <div class="container">
+        <div class="section-label">
+          <span class="section-label__line"></span>
+          <span class="section-label__text">What I Do</span>
+        </div>
+        <h2 class="section-heading">
+          End-to-end capability.
+          <span class="section-heading__muted">From database to interface.</span>
+        </h2>
+
+        <div class="pillars__grid">
+          <div class="pillar-card reveal" data-index="01">
+            <div class="pillar-card__icon pillar-card__icon--blue">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="22" height="22"><rect x="2" y="3" width="20" height="5" rx="1"/><rect x="2" y="10" width="20" height="5" rx="1"/><rect x="2" y="17" width="20" height="5" rx="1"/></svg>
+            </div>
+            <h3 class="pillar-card__title">Backend Systems</h3>
+            <p class="pillar-card__desc">Authentication flows, REST APIs, database architecture and server-side logic. I build the infrastructure that keeps platforms secure and fast.</p>
+            <ul class="pillar-card__tags">
+              <li>PHP</li><li>Node.js</li><li>Python</li><li>MySQL</li><li>PostgreSQL</li>
+            </ul>
+          </div>
+
+          <div class="pillar-card reveal" data-index="02">
+            <div class="pillar-card__icon pillar-card__icon--green">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="22" height="22"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            </div>
+            <h3 class="pillar-card__title">Frontend Interfaces</h3>
+            <p class="pillar-card__desc">Dashboards, responsive layouts and interactive UIs. I translate complex data into interfaces that are clear to use and reliable across devices.</p>
+            <ul class="pillar-card__tags">
+              <li>React</li><li>HTML5</li><li>CSS3</li><li>JavaScript</li>
+            </ul>
+          </div>
+
+          <div class="pillar-card reveal" data-index="03">
+            <div class="pillar-card__icon pillar-card__icon--purple">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="22" height="22"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+            </div>
+            <h3 class="pillar-card__title">Web3 and Integrations</h3>
+            <p class="pillar-card__desc">Smart contracts, DeFi automation and third-party API integrations. From Stripe to Aave to Twilio, I wire systems together reliably.</p>
+            <ul class="pillar-card__tags">
+              <li>Solidity</li><li>Web3.js</li><li>Aave</li><li>Uniswap</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INDUSTRIES -->
+    <section class="industries section" style="padding-top:0">
+      <div class="container">
+        <div class="section-label">
+          <span class="section-label__line"></span>
+          <span class="section-label__text">Industries</span>
+        </div>
+        <div class="industries__grid">
+          <div class="industry-card reveal">
+            <div class="industry-card__icon industry-card__icon--blue">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" width="26" height="26"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+            </div>
+            <span>Aviation</span>
+          </div>
+          <div class="industry-card reveal">
+            <div class="industry-card__icon industry-card__icon--green">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" width="26" height="26"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
+            </div>
+            <span>Fintech</span>
+          </div>
+          <div class="industry-card reveal">
+            <div class="industry-card__icon industry-card__icon--red">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" width="26" height="26"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+            </div>
+            <span>Healthcare</span>
+          </div>
+          <div class="industry-card reveal">
+            <div class="industry-card__icon industry-card__icon--purple">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" width="26" height="26"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+            </div>
+            <span>Web3 / DeFi</span>
+          </div>
+          <div class="industry-card reveal">
+            <div class="industry-card__icon industry-card__icon--orange">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" width="26" height="26"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 001.98 1.61h9.72a2 2 0 001.97-1.67L23 6H6"/></svg>
+            </div>
+            <span>E-Commerce</span>
+          </div>
+          <div class="industry-card reveal">
+            <div class="industry-card__icon industry-card__icon--teal">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" width="26" height="26"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+            </div>
+            <span>Nonprofit</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SELECTED WORK -->
+    <section class="work-preview section">
+      <div class="container">
+        <div class="section-label">
+          <span class="section-label__line"></span>
+          <span class="section-label__text">Selected Work</span>
+        </div>
+        <div class="work-preview__header">
+          <h2 class="section-heading">
+            Systems built.
+            <span class="section-heading__muted">Problems solved.</span>
+          </h2>
+          <a href="work.html" class="btn btn--ghost btn--sm">View All Work</a>
+        </div>
+
+        <div class="work-cards">
+          <a href="work.html#aviation" class="work-card work-card--featured reveal">
+            <div class="work-card__body">
+              <div class="work-card__domain">Aviation and Safety</div>
+              <h3 class="work-card__title">SERA Aviation Safety Platform</h3>
+              <p class="work-card__desc">Built SSO authentication with Azure AD and AWS Cognito, RESTful API integrations and dynamic dashboards for airlines submitting incident reports across the US.</p>
+              <ul class="work-card__tags">
+                <li>PHP</li><li>MySQL</li><li>Azure AD</li><li>AWS Cognito</li><li>KoboToolbox API</li>
+              </ul>
+            </div>
+            <div class="work-card__visual--featured">
+              <img src="assets/images/SERA.jpeg" alt="SERA Aviation Safety Platform" class="work-card__visual-img" />
+              <span class="work-card__arrow">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+              </span>
+            </div>
+          </a>
+
+          <a href="work.html#fintech" class="work-card reveal">
+            <div class="work-card__domain">Fintech</div>
+            <h3 class="work-card__title">Stocks and Bonds Capital</h3>
+            <p class="work-card__desc">Full trading platform with account tiers, crypto payment handling and automated price updates.</p>
+            <div class="work-card__meta">
+              <ul class="work-card__tags">
+                <li>PHP</li><li>MySQL</li><li>JavaScript</li><li>External APIs</li>
+              </ul>
+              <span class="work-card__arrow">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+              </span>
+            </div>
+          </a>
+
+          <a href="work.html#web3" class="work-card reveal">
+            <div class="work-card__domain">Web3 and DeFi</div>
+            <h3 class="work-card__title">Flash Loan Arbitrage Bot</h3>
+            <p class="work-card__desc">Automated Ethereum-based flash loan bot using Aave and Uniswap for cross-DEX arbitrage.</p>
+            <div class="work-card__meta">
+              <ul class="work-card__tags">
+                <li>Solidity</li><li>Web3.js</li><li>Aave</li><li>Uniswap</li>
+              </ul>
+              <span class="work-card__arrow">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+              </span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA BANNER -->
+    <section class="cta-banner section">
+      <div class="container">
+        <div class="cta-banner__inner reveal">
+          <p class="cta-banner__eyebrow">Open to work</p>
+          <h2 class="cta-banner__heading">Got a system<br/><em class="hero__serif">to build?</em></h2>
+          <p class="cta-banner__sub">Freelance, remote contracts and full-time roles. Let's talk about what you need.</p>
+          <a href="contact.html" class="btn btn--cta-banner">Start a Conversation</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <span class="footer__logo">
+          <span class="nav__logo-bracket">[</span>OF<span class="nav__logo-bracket">]</span>
+        </span>
+        <p class="footer__copy">Onoyima Francis &copy; 2026</p>
+        <div class="footer__links">
+          <a href="mailto:francisonoyima23@gmail.com" class="footer__link">Email</a>
+          <a href="https://www.linkedin.com/in/onoyima-francis-3aabab253/" class="footer__link">LinkedIn</a>
+          <a href="https://github.com/Francisemeka" class="footer__link">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets\javascript\main.js"></script>
+</body>
+</html>
