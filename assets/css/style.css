@@ -1378,6 +1378,36 @@ body {
   line-height: 1.7;
   margin-bottom: 1.2rem;
 }
+
+/* Work Title Header link with arrow icon */
+.work-item__title a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.work-title-link-icon {
+  font-size: 0.65em;
+  opacity: 0.45;
+  transform: translateY(-2px);
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease;
+}
+
+.work-item__title a:hover {
+  color: var(--accent);
+}
+
+.work-item__title a:hover .work-title-link-icon {
+  opacity: 1;
+  transform: translate(2px, -3px);
+}
+
+
 .work-item__bullets {
   list-style: none;
   display: flex;

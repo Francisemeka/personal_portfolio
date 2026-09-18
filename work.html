@@ -3,7 +3,26 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Work | Onoyima Francis</title>
+  <!-- SEO Meta Tags for work.html -->
+  <title>Onoyima Francis | Full-Stack Developer Portfolio & Case Studies</title>
+  <meta name="description" content="Explore production-ready software systems built by full-stack engineer Onoyima Francis. Showcasing secure fintech platforms, Web3 smart contracts, automated pipelines, and aviation safety tools.">
+  <meta name="keywords" content="Full-Stack Developer, PHP, Laravel, Node.js, Solidity, Python Developer, Software Engineering Portfolio, Fintech, Web3, Case Studies">
+
+  <!-- Open Graph / Facebook (For link previews on social platforms) -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://github.io">
+  <meta property="og:title" content="Onoyima Francis | Full-Stack Developer Portfolio & Case Studies">
+  <meta property="og:description" content="Production-ready software systems across aviation, fintech, healthcare, and Web3. Built by software engineer Onoyima Francis.">
+  <meta property="og:image" content="https://github.io">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://github.io">
+  <meta name="twitter:title" content="Onoyima Francis | Full-Stack Developer Portfolio & Case Studies">
+  <meta name="twitter:description" content="Production-ready software systems across aviation, fintech, healthcare, and Web3. Built by software engineer Onoyima Francis.">
+  <meta name="twitter:image" content="https://github.io">
+
+<!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:wght@300;400;500&family=Epilogue:wght@300;400;500&display=swap" rel="stylesheet" />
@@ -82,7 +101,17 @@
           <div class="work-item__header">
             <div>
               <span class="work-item__domain">Aviation and Safety</span>
-              <h2 class="work-item__title">SERA Aviation Safety Platform</h2>
+              <h2 class="work-item__title">
+                <a
+                  href="https://eu.sera.com.au/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Visit Natures Eco Tech Solar Website"
+                >
+                  SERA Aviation Safety Platform
+                  <span class="work-title-link-icon">↗</span>
+                </a>
+              </h2>
               <span class="work-item__period">Dec 2024 – Sep 2025 &nbsp;·&nbsp; Remote · United States</span>
             </div>
           
@@ -128,12 +157,213 @@
 
         <div class="work-divider"></div>
 
+        <!-- NIGHTBRIGHT -->
+        <div class="work-item" id="nightbright">
+          <div class="work-item__header">
+            <div>
+              <span class="work-item__domain">Nonprofit and Charity</span>
+              <h2 class="work-item__title">
+                <a
+                  href="https://www.nightbright.org/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Visit Natures Eco Tech Solar Website"
+                >
+                  NightBright Donor Platform
+                  <span class="work-title-link-icon">↗</span>
+                </a>
+              </h2>
+              <span class="work-item__period">Jun 2025 – Aug 2025 &nbsp;·&nbsp; Remote · United States</span>
+            </div>
+            <div class="work-item__tags">
+              <span>Laravel</span><span>PHP</span><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Stripe</span>
+            </div>
+          </div>
+          <p class="work-item__summary">
+            NightBright is a Laravel platform enabling donors and investors to support evangelist-led causes including feeding programs, church rebuilding and charity missions.
+          </p>
+
+          <!-- MEDIA TOGGLE -->
+          <div class="media-viewer" data-viewer>
+            <div class="media-viewer__toggle">
+              <button class="media-viewer__pill active" data-tab="screenshots">Screenshots</button>
+              <button class="media-viewer__pill" data-tab="video">Video</button>
+            </div>
+            <div class="media-viewer__frame">
+              <div class="media-viewer__panel active" data-panel="screenshots">
+                <img src="assets/images/NB.jpeg" alt="NightBright donor platform" />
+              </div>
+              <div class="media-viewer__panel" data-panel="video">
+                <video autoplay muted loop playsinline>
+                  <source src="assets/videos/NB.mov" type="video/mp4" />
+                </video>
+                <span class="media-viewer__live"><span class="media-viewer__dot"></span> Live preview</span>
+              </div>
+            </div>
+          </div>
+
+          <ul class="work-item__bullets">
+            <li>Worked across a two-server architecture required to run the platform's donation and dashboard systems.</li>
+            <li>Fixed UI and UX issues and implemented responsive design using HTML5 and CSS3 for both Evangelist and Donor dashboards.</li>
+            <li>Repaired the profile picture upload system ensuring images save correctly across environments.</li>
+            <li>Fixed and tested Stripe payment API integration using their test environment, ensuring reliable transaction workflows and proper error handling.</li>
+            <li>Improved authentication by separating donor and evangelist signups and logins, and adding proper validation with error feedback.</li>
+            <li>Corrected redirect logic for both dashboards to ensure users always land in the correct portal.</li>
+            <li>Polished frontend layouts and optimized all pages for both mobile and large screens, enhancing performance and interactivity through JavaScript improvements.</li>
+          </ul>
+        </div>
+
+        <div class="work-divider"></div>
+
+
+        <!-- NATURES ECO TECH -->
+        <div class="work-item" id="naturesecotech">
+          <div class="work-item__header">
+            <div>
+              <span class="work-item__domain">Solar Energy & Renewable Power</span>
+              <h2 class="work-item__title">
+                <a
+                  href="https://infiniteeecotech.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Visit Natures Eco Tech Solar Website"
+                >
+                  Natures Eco Tech Solar Website
+                  <span class="work-title-link-icon">↗</span>
+                </a>
+              </h2>
+              <span class="work-item__period">Sep 2026 &nbsp;·&nbsp; Remote · Nigeria</span>
+            </div>
+            <div class="work-item__tags"> <span>JavaScript</span> <span>HTML5</span> <span>CSS3</span> <span>Responsive Design</span> <span>WhatsApp API</span> </div>
+          </div>
+          <p class="work-item__summary">
+           Built a responsive solar installation website with a custom energy calculator that estimates system requirements and connects customers directly with the company through WhatsApp.
+          </p>
+          <a
+              href="https://infiniteeecotech.com/"
+              class="work-live-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View live site
+              <span>↗</span>
+            </a>
+
+          <!-- MEDIA TOGGLE -->
+          <div class="media-viewer" data-viewer>
+            <div class="media-viewer__toggle">
+              <button class="media-viewer__pill active" data-tab="screenshots">Screenshots</button>
+              <button class="media-viewer__pill" data-tab="video">Video</button>
+              <button class="media-viewer__pill" data-tab="energy_calculator">Energy Calculator</button>
+            </div>
+            <div class="media-viewer__frame">
+              <div class="media-viewer__panel active" data-panel="screenshots">
+                <img src="assets/images/natures-home.png" alt="Natures Eco Tech solar installation website" />
+                <img src="assets/images/natures-whyus.png" alt="Natures Eco Tech solar installation website" />
+                <img src="assets/images/natures-blog.png" alt="Natures Eco Tech solar installation website" />
+              </div>
+              <div class="media-viewer__panel" data-panel="video">
+                <video autoplay muted loop playsinline>
+                  <source src="assets/videos/natures Eco tech.mp4" type="video/mp4" />
+                </video>
+                <span class="media-viewer__live"><span class="media-viewer__dot"></span> Live preview</span>
+              </div>
+              <div class="media-viewer__panel" data-panel="energy_calculator">
+                <video autoplay muted loop playsinline>
+                  <source src="assets/videos/natures eco tech calculator.mp4" type="video/mp4" />
+                </video>
+                <span class="media-viewer__live"><span class="media-viewer__dot"></span> Live preview</span>
+              </div>
+            </div>
+          </div>
+
+          <ul class="work-item__bullets">
+            <li> Built the energy calculator in JavaScript to calculate daily energy consumption and peak load from appliance quantity, wattage, and daytime and nighttime usage. </li>
+             <li> Added inverter, battery, and solar PV sizing calculations based on the customer's usage, location, system type, and installation profile. </li> 
+             <li> Built the package matching logic to compare the calculated requirements against the company's available solar packages and return the first package that meets the requirements. </li> 
+             <li> Added form validation to prevent incomplete appliance usage data from being used in the calculation. </li> 
+             <li> Added a custom-system result when a customer's requirements exceed the available package range instead of returning an unsuitable package. </li> 
+             <li> Built the WhatsApp integration to generate a pre-filled message containing the customer's details, energy requirements, and recommended package. </li> 
+             <li> Built the multi-stage calculator flow, including appliance selection, usage profile, customer details, analysis, and results. </li> 
+             <li> Developed the responsive website and frontend interactions using HTML5, CSS3, and JavaScript. </li>
+          </ul>
+        </div>
+
+        <div class="work-divider"></div>
+
+        <!-- IHEALTH -->
+        <div class="work-item" id="ihealth">
+          <div class="work-item__header">
+            <div>
+              <span class="work-item__domain">Healthcare and Data</span>
+              <h2 class="work-item__title">
+                <a
+                  href="https://www.ihealthwellness.org/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Visit Natures Eco Tech Solar Website"
+                >
+                  iHealth — Medical Data Extraction Pipeline
+                  <span class="work-title-link-icon">↗</span>
+                </a>
+              </h2>
+              <span class="work-item__period">Feb 2024 – May 2024 &nbsp;·&nbsp; Volunteer &nbsp;·&nbsp; Remote · United States</span>
+            </div>
+            <div class="work-item__tags">
+              <span>Python</span><span>BeautifulSoup</span><span>Selenium</span><span>Scrapy</span><span>Pandas</span>
+            </div>
+          </div>
+          <p class="work-item__summary">
+            Built automated web scraping pipelines to extract, clean and normalize structured medical content from major health platforms including CDC, WHO, Mayo Clinic and WebMD, feeding iHealth's medical knowledge base.
+          </p>
+
+          <div class="media-viewer" data-viewer>
+            <div class="media-viewer__toggle">
+              <button class="media-viewer__pill active" data-tab="search">Doctor Search</button>
+              <button class="media-viewer__pill" data-tab="scraper">Scraper in Action</button>
+              <button class="media-viewer__pill" data-tab="profile">Profile Extraction</button>
+            </div>
+            <div class="media-viewer__frame">
+              <div class="media-viewer__panel active" data-panel="search">
+                <img src="assets/images/ihealth1.jpeg" alt="iHealth MediFind doctor search results" />
+              </div>
+              <div class="media-viewer__panel" data-panel="scraper">
+                <img src="assets/images/ihealth3.jpeg" alt="iHealth scraper running in VS Code with Chrome automation" />
+                <p class="work-item__media-caption">Selenium controlling Chrome to navigate and extract data from MediFind in real time. The VS Code workspace shows the multi-script pipeline including link scrapers, profile extractors and ETL scripts outputting to CSV.</p>
+              </div>
+              <div class="media-viewer__panel" data-panel="profile">
+                <img src="assets/images/ihealth5.jpeg" alt="iHealth doctor profile detail extraction" />
+                <p class="work-item__media-caption">Individual doctor profile pages scraped for specialty, location, insurance, availability and expertise ratings. Data was normalized and structured for integration into iHealth's medical knowledge base.</p>
+              </div>
+            </div>
+          </div>
+
+          <ul class="work-item__bullets">
+            <li>Extracted structured medical content from official health websites including CDC, WHO, Mayo Clinic and WebMD.</li>
+            <li>Built automated scraping pipelines using BeautifulSoup, Selenium and Scrapy, handling dynamic page loading and anti-bot techniques.</li>
+            <li>Normalized scraped data into clean, structured datasets ready for research and content integration.</li>
+            <li>Identified and flagged broken medical references, duplicate entries and misinformation, improving the accuracy of iHealth's knowledge base.</li>
+          </ul>
+        </div>
+
+        <div class="work-divider"></div>
+
         <!-- COINBASE VAULT -->
         <div class="work-item" id="kyc">
           <div class="work-item__header">
             <div>
               <span class="work-item__domain">Crypto and Security</span>
-              <h2 class="work-item__title">Encryption Vault — Authentication & KYC Platform(Coinbase-Inspired)</h2>
+              <h2 class="work-item__title">
+                <a
+                  href="https://github.com/Francisemeka/Coinbase_encryptionvault"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Visit Natures Eco Tech Solar Website"
+                >
+                  Encryption Vault — Authentication & KYC Platform(Coinbase-Inspired)
+                  <span class="work-title-link-icon">↗</span>
+                </a>
+              </h2>
               <span class="work-item__period">Aug 2025 – Oct 2025 &nbsp;·&nbsp; Remote · United States</span>
             </div>
             <div class="work-item__tags">
@@ -182,54 +412,6 @@
             <li>Developed an admin dashboard for managing KYC queues, user lists and verification tools.</li>
             <li>Updated MySQL schema to support OTP codes, expiries, verify states and KYC records.</li>
             <li>Prepared the system for deployment on Render with Composer setup, .env configs, DB refactoring and SDK configuration.</li>
-          </ul>
-        </div>
-
-        <div class="work-divider"></div>
-
-        <!-- NIGHTBRIGHT -->
-        <div class="work-item" id="nightbright">
-          <div class="work-item__header">
-            <div>
-              <span class="work-item__domain">Nonprofit and Charity</span>
-              <h2 class="work-item__title">NightBright Donor Platform</h2>
-              <span class="work-item__period">Jun 2025 – Aug 2025 &nbsp;·&nbsp; Remote · United States</span>
-            </div>
-            <div class="work-item__tags">
-              <span>Laravel</span><span>PHP</span><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Stripe</span>
-            </div>
-          </div>
-          <p class="work-item__summary">
-            NightBright is a Laravel platform enabling donors and investors to support evangelist-led causes including feeding programs, church rebuilding and charity missions.
-          </p>
-
-          <!-- MEDIA TOGGLE -->
-          <div class="media-viewer" data-viewer>
-            <div class="media-viewer__toggle">
-              <button class="media-viewer__pill active" data-tab="screenshots">Screenshots</button>
-              <button class="media-viewer__pill" data-tab="video">Video</button>
-            </div>
-            <div class="media-viewer__frame">
-              <div class="media-viewer__panel active" data-panel="screenshots">
-                <img src="assets/images/NB.jpeg" alt="NightBright donor platform" />
-              </div>
-              <div class="media-viewer__panel" data-panel="video">
-                <video autoplay muted loop playsinline>
-                  <source src="assets/videos/NB.mov" type="video/mp4" />
-                </video>
-                <span class="media-viewer__live"><span class="media-viewer__dot"></span> Live preview</span>
-              </div>
-            </div>
-          </div>
-
-          <ul class="work-item__bullets">
-            <li>Worked across a two-server architecture required to run the platform's donation and dashboard systems.</li>
-            <li>Fixed UI and UX issues and implemented responsive design using HTML5 and CSS3 for both Evangelist and Donor dashboards.</li>
-            <li>Repaired the profile picture upload system ensuring images save correctly across environments.</li>
-            <li>Fixed and tested Stripe payment API integration using their test environment, ensuring reliable transaction workflows and proper error handling.</li>
-            <li>Improved authentication by separating donor and evangelist signups and logins, and adding proper validation with error feedback.</li>
-            <li>Corrected redirect logic for both dashboards to ensure users always land in the correct portal.</li>
-            <li>Polished frontend layouts and optimized all pages for both mobile and large screens, enhancing performance and interactivity through JavaScript improvements.</li>
           </ul>
         </div>
 
@@ -398,69 +580,22 @@
 
         <div class="work-divider"></div>
 
-        
-
-        <!-- SEASONAL WEB EXPERIENCES -->
-        <div class="work-item" id="ext">
-          <div class="work-item__header">
-            <div>
-              <span class="work-item__domain">E-commerce and Seasonal</span>
-              <h2 class="work-item__title">Seasonal Web Experiences</h2>
-              <span class="work-item__period">
-                  December 2025 &nbsp;·&nbsp; Remote · Multiple International Clients
-              </span>
-            </div>
-            <div class="work-item__tags">
-              <span>HTML</span><span>CSS</span><span>JavaScript</span>
-            </div>
-          </div>
-          <p class="work-item__summary">
-            Standalone seasonal landing pages built for high-conversion moments, including a Christmas campaign page and a New Year 2026 gift ordering experience.
-          </p>
-
-          <!-- MEDIA TOGGLE -->
-         <div class="media-viewer__toggle-wrap" data-viewer>
-  <div class="media-viewer__toggle">
-    <button class="media-viewer__pill active" data-tab="christmas">Christmas</button>
-    <button class="media-viewer__pill" data-tab="screenshots">Christmas Gift Shop</button>
-    <button class="media-viewer__pill" data-tab="gifting">Gift Ordering</button>
-  </div>
-
-            <div class="media-viewer__frame">
-              <div class="media-viewer__panel active" data-panel="christmas">
-                <video autoplay muted loop playsinline>
-                  <source src="assets/videos/EXT1.mov" type="video/mp4" />
-                </video>
-                <span class="media-viewer__live"><span class="media-viewer__dot"></span> Christmas page</span>
-              </div>
-              <div class="media-viewer__panel" data-panel="screenshots">
-                <img src="assets/images/chris_store.png" alt="Christmas store" />
-                <img src="assets/images/chris_store1.png" alt="Christmas store" />
-              </div>
-              <div class="media-viewer__panel" data-panel="gifting">
-                <video autoplay muted loop playsinline>
-                  <source src="assets/videos/EXT3.mov" type="video/mp4" />
-                </video>
-                <span class="media-viewer__live"><span class="media-viewer__dot"></span> Gift ordering 2026</span>
-              </div>
-            </div>
-          </div>
-
-          <ul class="work-item__bullets">
-            <li>Designed festive landing pages with strong seasonal visual identity and clear conversion paths.</li>
-            <li>Built a gift ordering interface with product browsing and a New Year 2026 promotional theme.</li>
-          </ul>
-        </div>
-
-          <div class="work-divider"></div>
-
-
         <!-- TOURIX -->
         <div class="work-item" id="tourix">
           <div class="work-item__header">
             <div>
               <span class="work-item__domain">Travel and Transport</span>
-              <h2 class="work-item__title">Touric Bus Transfers</h2>
+              <h2 class="work-item__title">
+                <a
+                  href="https://github.com/Francisemeka/transport-booking-system/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Visit Natures Eco Tech Solar Website"
+                >
+                  Touric Bus Transfers
+                  <span class="work-title-link-icon">↗</span>
+                </a>
+              </h2>
               <span class="work-item__period">Founder & Full-Stack Developer</span>
             </div>
             <div class="work-item__tags">
@@ -519,6 +654,61 @@
         </div>
 
         <div class="work-divider"></div>
+        
+
+        <!-- SEASONAL WEB EXPERIENCES -->
+        <div class="work-item" id="ext">
+          <div class="work-item__header">
+            <div>
+              <span class="work-item__domain">E-commerce and Seasonal</span>
+              <h2 class="work-item__title">Seasonal Web Experiences</h2>
+              <span class="work-item__period">
+                  December 2025 &nbsp;·&nbsp; Remote · Multiple International Clients
+              </span>
+            </div>
+            <div class="work-item__tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+          </div>
+          <p class="work-item__summary">
+            Standalone seasonal landing pages built for high-conversion moments, including a Christmas campaign page and a New Year 2026 gift ordering experience.
+          </p>
+
+          <!-- MEDIA TOGGLE -->
+         <div class="media-viewer__toggle-wrap" data-viewer>
+  <div class="media-viewer__toggle">
+    <button class="media-viewer__pill active" data-tab="christmas">Christmas</button>
+    <button class="media-viewer__pill" data-tab="screenshots">Christmas Gift Shop</button>
+    <button class="media-viewer__pill" data-tab="gifting">Gift Ordering</button>
+  </div>
+
+            <div class="media-viewer__frame">
+              <div class="media-viewer__panel active" data-panel="christmas">
+                <video autoplay muted loop playsinline>
+                  <source src="assets/videos/EXT1.mov" type="video/mp4" />
+                </video>
+                <span class="media-viewer__live"><span class="media-viewer__dot"></span> Christmas page</span>
+              </div>
+              <div class="media-viewer__panel" data-panel="screenshots">
+                <img src="assets/images/chris_store.png" alt="Christmas store" />
+                <img src="assets/images/chris_store1.png" alt="Christmas store" />
+              </div>
+              <div class="media-viewer__panel" data-panel="gifting">
+                <video autoplay muted loop playsinline>
+                  <source src="assets/videos/EXT3.mov" type="video/mp4" />
+                </video>
+                <span class="media-viewer__live"><span class="media-viewer__dot"></span> Gift ordering 2026</span>
+              </div>
+            </div>
+          </div>
+
+          <ul class="work-item__bullets">
+            <li>Designed festive landing pages with strong seasonal visual identity and clear conversion paths.</li>
+            <li>Built a gift ordering interface with product browsing and a New Year 2026 promotional theme.</li>
+          </ul>
+        </div>
+
+          <div class="work-divider"></div>
 
           <!-- QUIZ TO CASH -->
         <div class="work-item" id="quiztocash">
@@ -563,53 +753,6 @@
             <li>Designed the earn system UI covering six modules: surveys, ads engagement, offers, special giveaways, game predictions and referrals.</li>
             <li>Implemented a two-step onboarding flow with account creation and crypto wallet connection.</li>
             <li>Delivered a dark-themed, responsive interface consistent with the platform's crypto-native brand identity.</li>
-          </ul>
-        </div>
-
-        <div class="work-divider"></div>
-
-        <!-- IHEALTH -->
-        <div class="work-item" id="ihealth">
-          <div class="work-item__header">
-            <div>
-              <span class="work-item__domain">Healthcare and Data</span>
-              <h2 class="work-item__title">iHealth — Medical Data Extraction Pipeline</h2>
-              <span class="work-item__period">Feb 2024 – May 2024 &nbsp;·&nbsp; Volunteer &nbsp;·&nbsp; Remote · United States</span>
-            </div>
-            <div class="work-item__tags">
-              <span>Python</span><span>BeautifulSoup</span><span>Selenium</span><span>Scrapy</span><span>Pandas</span>
-            </div>
-          </div>
-          <p class="work-item__summary">
-            Built automated web scraping pipelines to extract, clean and normalize structured medical content from major health platforms including CDC, WHO, Mayo Clinic and WebMD, feeding iHealth's medical knowledge base.
-          </p>
-
-          <div class="media-viewer" data-viewer>
-            <div class="media-viewer__toggle">
-              <button class="media-viewer__pill active" data-tab="search">Doctor Search</button>
-              <button class="media-viewer__pill" data-tab="scraper">Scraper in Action</button>
-              <button class="media-viewer__pill" data-tab="profile">Profile Extraction</button>
-            </div>
-            <div class="media-viewer__frame">
-              <div class="media-viewer__panel active" data-panel="search">
-                <img src="assets/images/ihealth1.jpeg" alt="iHealth MediFind doctor search results" />
-              </div>
-              <div class="media-viewer__panel" data-panel="scraper">
-                <img src="assets/images/ihealth3.jpeg" alt="iHealth scraper running in VS Code with Chrome automation" />
-                <p class="work-item__media-caption">Selenium controlling Chrome to navigate and extract data from MediFind in real time. The VS Code workspace shows the multi-script pipeline including link scrapers, profile extractors and ETL scripts outputting to CSV.</p>
-              </div>
-              <div class="media-viewer__panel" data-panel="profile">
-                <img src="assets/images/ihealth5.jpeg" alt="iHealth doctor profile detail extraction" />
-                <p class="work-item__media-caption">Individual doctor profile pages scraped for specialty, location, insurance, availability and expertise ratings. Data was normalized and structured for integration into iHealth's medical knowledge base.</p>
-              </div>
-            </div>
-          </div>
-
-          <ul class="work-item__bullets">
-            <li>Extracted structured medical content from official health websites including CDC, WHO, Mayo Clinic and WebMD.</li>
-            <li>Built automated scraping pipelines using BeautifulSoup, Selenium and Scrapy, handling dynamic page loading and anti-bot techniques.</li>
-            <li>Normalized scraped data into clean, structured datasets ready for research and content integration.</li>
-            <li>Identified and flagged broken medical references, duplicate entries and misinformation, improving the accuracy of iHealth's knowledge base.</li>
           </ul>
         </div>
 
