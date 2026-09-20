@@ -157,6 +157,158 @@
 
         <div class="work-divider"></div>
 
+
+        <!-- OPENREMOTE -->
+        <div class="work-item" id="openremote">
+          <div class="work-item__header">
+            <div>
+              <span class="work-item__domain">Open Source · IoT Platform</span>
+
+              <h2 class="work-item__title">
+                <a
+                  href="https://github.com/Francisemeka/openremote/pull/3327"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="View OpenRemote deployment packaging pull request"
+                >
+                  OpenRemote — Deployment Packaging Fix
+                  <span class="work-title-link-icon">↗</span>
+                </a>
+              </h2>
+
+              <span class="work-item__period">
+                Aug 2026 – Aug 2026 &nbsp;·&nbsp; Open Source Contribution · Remote
+              </span>
+            </div>
+
+            <div class="work-item__tags">
+              <span>Java</span>
+              <span>Gradle</span>
+              <span>Docker</span>
+              <span>Git</span>
+              <span>GitHub</span>
+            </div>
+          </div>
+
+          <p class="work-item__summary">
+            Contributed a deployment packaging fix to OpenRemote after tracing an issue
+            where the demo setup extension was available during local Manager execution
+            but was missing from the deployment image used for test deployments.
+          </p>
+
+          <a
+            href="https://openremote.io/"
+            class="work-live-link"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Visit OpenRemote"
+          >
+            View OpenRemote
+            <span>↗</span>
+          </a>
+
+          <!-- MEDIA TOGGLE -->
+          <div class="media-viewer" data-viewer>
+            <div class="media-viewer__toggle">
+              <button
+                class="media-viewer__pill active"
+                data-tab="pull-request"
+              >
+                Pull Request
+              </button>
+
+              <button
+                class="media-viewer__pill"
+                data-tab="code"
+              >
+                Code Change
+              </button>
+
+              <button
+                class="media-viewer__pill"
+                data-tab="docker"
+              >
+                Docker Verification
+              </button>
+            </div>
+
+            <div class="media-viewer__frame">
+
+              <!-- PULL REQUEST -->
+              <div
+                class="media-viewer__panel active"
+                data-panel="pull-request"
+              >
+                <img
+                  src="assets/images/openremote.png"
+                  alt="OpenRemote pull request for deployment packaging fix"
+                />
+
+                <p class="work-item__media-caption">
+                  Pull request submitted to the OpenRemote project addressing the
+                  missing demo setup extension in deployment images.
+                </p>
+              </div>
+
+              <!-- CODE CHANGE -->
+              <div
+                class="media-viewer__panel"
+                data-panel="code"
+              >
+                <img
+                  src="assets/images/openremote1.png"
+                  alt="OpenRemote Gradle deployment packaging code change"
+                />
+
+                <p class="work-item__media-caption">
+                  Updated the Gradle configuration so the demo setup extension can be
+                  consumed by the deployment module and included in the deployment
+                  image.
+                </p>
+              </div>
+
+              <!-- DOCKER VERIFICATION -->
+              <div
+                class="media-viewer__panel"
+                data-panel="docker"
+              >
+                <img
+                  src="assets/images/openremote2.png"
+                  alt="OpenRemote demo setup extension verified inside Docker image"
+                />
+
+                <p class="work-item__media-caption">
+                  Verified the generated Docker image contains
+                  openremote-demo-setup-extension-1.30.0.jar under
+                  /deployment/manager/extensions/.
+                </p>
+              </div>
+
+            </div>
+          </div>
+
+          <ul class="work-item__bullets">
+
+            <li> Found that the demo setup extension was available when running the Manager locally, but was missing from the deployment image. </li>
+
+            <li> Checked the Gradle setup and found that the extension was only being added to the Manager runtime. </li>
+
+            <li> Added a consumable Gradle configuration so the deployment module could use the demo setup extension. </li>
+
+            <li> Updated the deployment build to copy the extension into /deployment/manager/extensions/. </li>
+
+            <li> Ran :deployment:installDist and checked that openremote-demo-setup-extension-1.30.0.jar was included in the generated files. </li>
+
+            <li> Built the deployment Docker image and checked that the same JAR was present inside the image. </li>
+
+            <li> Opened pull request #3327 on OpenRemote with the fix. </li>
+
+          </ul>
+        </div>
+
+        <div class="work-divider"></div>
+
+
         <!-- NIGHTBRIGHT -->
         <div class="work-item" id="nightbright">
           <div class="work-item__header">
